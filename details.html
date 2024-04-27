@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Details</title>
+  <link rel="stylesheet" href="bstyle.css">
+  <style>
+
+  :root{
+  --pink:#EE0548;
+  --black:#130f40;
+}
+
+a:hover{
+  color:#fff;
+  background: var(--pink);
+}
+a:hover{
+  color:var(--black);
+}
+a{
+  height: 4rem;
+  width:15%;
+  line-height: 4rem;
+  /* font-size: 50%; */
+  color:var(--black);
+  background:#eee;
+  color:#fff;
+  font-size: 2rem;
+  /* margin-left: 2rem; */
+  text-decoration: none;
+}
+
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border:.2rem solid var(--pink);
+  color: white;
+  font-size: 1.7rem;
+    /* font-size: 55%; */
+
+  padding:.8rem 3rem;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  margin-top: 5%;
+}
+
+  .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover{
+  background: var(--pink);
+  border-color: var(--pink);
+  color:#fff;
+}
+
+@media (max-width:450px){
+
+  
+
+  .btn {
+    /* font-size: 50%; */
+    width: 50%;
+
+  }
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Personal Details</h1>
+
+  <div class="button-container">
+    <button id="bride-btn"> Bride</button>
+    <button id="groom-btn">Groom</button>
+  </div>
+  
+  <div id="slideshow-container">
+    <div class="slideshow"></div>
+  </div>
+
+  <div id="content"></div>
+  
+  
+</div>
+
+<div class="back">
+    <a href="index.html" class="btn">Back to home</a>
+    </div>
+
+<script src="bscript.js"></script>
+</body>
+</html>

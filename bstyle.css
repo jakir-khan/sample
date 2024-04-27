@@ -1,0 +1,75 @@
+:root {
+    --pink: #EE0548;
+    --black: #130f40;
+}
+
+body {
+    background: var(--black);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+#content {
+    margin-top: 10px;
+}
+
+#slideshow-container {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    /* background-size: contain; */
+}
+
+/* .slideshow {
+    display: flex;
+    transition: transform 0.5s ease;
+        /* background-size: contain; */
+/* } */
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+        /* background-size: contain; */
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

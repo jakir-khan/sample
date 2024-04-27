@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* location section styling */
+
+:root{
+  --pink:#EE0548;
+  --black:#130f40;
+}
+
+.location {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.location .heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.location .heading h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.location .map-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.location .location-details {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.location .location-details p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+a:hover{
+  color:#fff;
+  background: var(--pink);
+}
+a:hover{
+  color:var(--black);
+}
+a{
+  height: 4rem;
+  width:15%;
+  line-height: 4rem;
+  /* font-size: 50%; */
+  color:var(--black);
+  background:#eee;
+  color:#fff;
+  font-size: 2rem;
+  /* margin-left: 2rem; */
+  text-decoration: none;
+}
+.btn{
+  display: inline-block;
+  margin-top: 1rem;
+  border:.2rem solid var(--black);
+  color:var(--black);
+  font-size: 1.7rem;
+    /* font-size: 55%; */
+
+  padding:.8rem 3rem;
+  cursor: pointer;
+  background: none;
+  text-align: center;
+  margin-top: 5%;
+}
+.btn:hover{
+  background: var(--pink);
+  border-color: var(--pink);
+  color:#fff;
+}
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:450px){
+
+  
+
+  .btn {
+    /* font-size: 50%; */
+    width: 50%;
+
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section class="location" id="location">
+
+    <div class="heading">
+        <h1>Location</h1>
+        <img src="images/header-img.png" alt="">
+    </div>
+
+    <div class="map-container">
+        <!-- You can embed a map here using Google Maps or any other mapping service -->
+        <!-- Example: -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3829.225732557874!2d80.41275297460483!3d16.311406332910188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4a757ea53bf063%3A0xb84d699a5c1bd368!2sAbdul%20Kalam%20Shadi%20Khana%20Raod%2C%20Pattabhipuram%2C%20Guntur%2C%20Andhra%20Pradesh%20522006!5e0!3m2!1sen!2sin!4v1713803045607!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+            </div>
+
+    <!-- Add any additional details or instructions for finding the location -->
+    <div class="location-details">
+        <p>The wedding venue is located at:</p>
+        <p>123 Wedding Venue Street, Cityville, Country</p>
+        <p>Please refer to the map above for directions and location details.</p>
+    </div>
+    <div class="back">
+    <a href="index.html" class="btn">Back to home</a>
+    </div>
+
+</section>
+</body>
+</html>
